@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OX.DataBinding
+namespace OX.Strongbind
 {
     public class Binding
     {

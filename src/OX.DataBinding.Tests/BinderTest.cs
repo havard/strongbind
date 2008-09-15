@@ -1,17 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
 using System.Windows.Forms;
-using OX.DataBinding;
+using NUnit.Framework;
 
-namespace OX.DataBinding.Tests
+
+namespace OX.Strongbind.Tests
 {
     [TestFixture]
     public class BinderTest
     {        
         [Test]
-        public void TestCheckBoxBindings()
+        public void TestTwoWayBindingWithPropertyChangeNotification()
         {
             IBusinessObject businessObject = new BusinessObject();
             businessObject.Name = "Foo";
@@ -39,6 +36,10 @@ namespace OX.DataBinding.Tests
             businessObject.Name = "Baz";
 
             Assert.AreEqual(businessObject.Name, checkbox.Text);
+        }
+
+        public void TestOneWayBinding()
+        {
         }
     }
 }

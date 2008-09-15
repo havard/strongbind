@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.ComponentModel;
 
-namespace OX.DataBinding.Tests
+namespace OX.Strongbind.Tests
 {
     public class BusinessObject : IBusinessObject, INotifyPropertyChanged
     {

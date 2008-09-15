@@ -2,8 +2,7 @@ using System;
 using System.Reflection;
 using System.Reflection.Emit;
 
-
-namespace OX.DataBinding
+namespace OX.Strongbind
 {
     public class Bindable
     {

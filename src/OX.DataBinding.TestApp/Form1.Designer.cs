@@ -1,4 +1,4 @@
-namespace OX.DataBinding.TestApp
+namespace OX.Strongbind.TestApp
 {
     partial class Form1
     {

@@ -1,5 +1,5 @@
-﻿using System;
-namespace OX.DataBinding.Tests
+﻿
+namespace OX.Strongbind.Tests
 {
     public interface IBusinessObject
     {

@@ -1,8 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace OX.DataBinding.TestApp
+namespace OX.Strongbind.TestApp
 {
     static class Program
     {
@@ -14,9 +13,7 @@ namespace OX.DataBinding.TestApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 f = new Form1();
-            f.Bind();
-            Application.Run(f);
+            Application.Run(new Form1());
         }
     }
 }
