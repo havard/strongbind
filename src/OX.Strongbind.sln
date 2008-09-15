@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind.TestApp", "OX.DataBinding.TestApp\OX.Strongbind.TestApp.csproj", "{A35E0199-EE49-447C-B7FA-808508B7F829}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind.TestApp", "OX.Strongbind.TestApp\OX.Strongbind.TestApp.csproj", "{A35E0199-EE49-447C-B7FA-808508B7F829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind.Tests", "OX.DataBinding.Tests\OX.Strongbind.Tests.csproj", "{02508339-BF1F-4E61-9D2E-6CF67E372896}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind.Tests", "OX.Strongbind.Tests\OX.Strongbind.Tests.csproj", "{02508339-BF1F-4E61-9D2E-6CF67E372896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind", "OX.DataBinding\OX.Strongbind.csproj", "{8E4A4DAA-ED2F-464F-B85E-70F3C00326F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OX.Strongbind", "OX.Strongbind\OX.Strongbind.csproj", "{8E4A4DAA-ED2F-464F-B85E-70F3C00326F1}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

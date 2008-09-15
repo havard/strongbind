@@ -71,7 +71,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OX.DataBinding\OX.Strongbind.csproj">
+    <ProjectReference Include="..\OX.Strongbind\OX.Strongbind.csproj">
       <Project>{8E4A4DAA-ED2F-464F-B85E-70F3C00326F1}</Project>
       <Name>OX.Strongbind</Name>
     </ProjectReference>
