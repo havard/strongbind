@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Windows.Forms;
 using System;
 using OX.Strongbind.Remoting;
+using System.Reflection;
 
 namespace OX.Strongbind.Tests
 {
@@ -47,6 +48,7 @@ namespace OX.Strongbind.Tests
         [Test]
         public void TestRemotingProxyForTreeView() { TestRemotingProxyFor<TreeView>(); }
         [Test]
+        [ExpectedException(typeof(TargetInvocationException))]
         public void TestRemotingProxyForWebBrowser() { TestRemotingProxyFor<WebBrowser>(); }
         
         private void TestRemotingProxyFor<T>() where T : Control, new()

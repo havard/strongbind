@@ -1,0 +1,17 @@
+
+		[Test]
+		public void TestBindingTo%CONTROL%()
+		{
+			%CONTROL% control = new %CONTROL%();
+			IBusinessObject obj = new BusinessObject();			
+			IBusinessObject bindableSource = Bindable.Source(obj);
+			
+			if(control is Control)
+				((Control)control).CreateControl();
+			control.BindingContext = new BindingContext();
+			
+			%CONTROL% bindableTarget = Bindable.Target(control);
+			
+%BINDINGS%
+		}
+		

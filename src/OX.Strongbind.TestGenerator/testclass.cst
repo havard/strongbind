@@ -1,0 +1,11 @@
+using System.Windows.Forms;
+using NUnit.Framework;
+
+namespace OX.Strongbind.Tests
+{
+    [TestFixture]
+	public class GeneratedBindingTests
+	{
+		%TESTS%
+	}
+}

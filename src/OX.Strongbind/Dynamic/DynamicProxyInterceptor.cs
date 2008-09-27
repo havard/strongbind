@@ -18,6 +18,8 @@ namespace OX.Strongbind.Dynamic
             if (!MethodMatchHelper.IsGetter(invocation.Method))
                 return;
 
+            invocation.ReturnValue = invocation.Method.Invoke(proxied, invocation.Arguments);
+
             string propertyName = MethodMatchHelper.PropertyNameFromGetter(invocation.Method);
             BindingPairHolder.DeclareBindingPair(proxied, propertyName);
         }
