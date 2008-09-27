@@ -13,6 +13,8 @@
     <SccLocalPath>Svn</SccLocalPath>
     <SccAuxPath>Svn</SccAuxPath>
     <SccProvider>SubversionScc</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>OX.Strongbind.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,15 +35,118 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bindable.cs" />
     <Compile Include="Binder.cs" />
-    <Compile Include="Binding.cs" />
+    <Compile Include="AbstractBinding.cs" />
     <Compile Include="BindingPair.cs" />
     <Compile Include="BindingPairHolder.cs" />
+    <Compile Include="CompleteBinding.cs" />
+    <Compile Include="Dynamic\AbstractInvocation.cs" />
+    <Compile Include="Dynamic\AllMethodsHook.cs" />
+    <Compile Include="Dynamic\Core\IChangeProxyTarget.cs" />
+    <Compile Include="Dynamic\Core\IInterceptor.cs" />
+    <Compile Include="Dynamic\Core\IInvocation.cs" />
+    <Compile Include="Dynamic\Core\IProxyTargetAccessor.cs" />
+    <Compile Include="Dynamic\Core\StandardInterceptor.cs" />
+    <Compile Include="Dynamic\DefaultProxyBuilder.cs" />
+    <Compile Include="Dynamic\DynamicProxy.cs" />
+    <Compile Include="Dynamic\DynamicProxyInterceptor.cs" />
+    <Compile Include="Dynamic\Generators\BaseProxyGenerator.cs" />
+    <Compile Include="Dynamic\Generators\CacheKey.cs" />
+    <Compile Include="Dynamic\Generators\ClassProxyGenerator.cs" />
+    <Compile Include="Dynamic\Generators\Constants.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\AbstractTypeEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\ArgumentsUtil.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\ClassEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\CodeBuilders\AbstractCodeBuilder.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\CodeBuilders\ConstructorCodeBuilder.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\CodeBuilders\MethodCodeBuilder.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\ConstructorCollection.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\ConstructorEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\CustomAttributeUtil.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\EventCollection.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\EventEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\GenericUtil.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\IMemberEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\LdcOpCodesDictionary.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\LdindOpCodesDictionary.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\MethodCollection.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\MethodEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\NestedClassCollection.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\NestedClassEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\OpCodeUtil.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\PropertiesCollection.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\PropertyEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\AddressOfReferenceExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ArgumentReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\AssignArrayStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\AssignStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ByRefReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ConstReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ConstructorInvocationStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ConvertExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\Expression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ExpressionStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\FieldReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\IILEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\IndirectReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\LiteralIntExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\LoadArrayElementExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\LoadRefArrayElementExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\LocalReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\MethodInvocationExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\MethodTokenExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\NewArrayExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\NewInstanceExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\NopStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\NullExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\Reference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ReferenceExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ReferencesToObjectArrayExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ReturnReferenceExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ReturnStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\SelfReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\Statement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\ThrowStatement.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\TypeReference.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\SimpleAST\TypeTokenExpression.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\StindOpCodesDictionary.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\StrongNameUtil.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\TypeConstructorEmitter.cs" />
+    <Compile Include="Dynamic\Generators\Emitters\TypeUtil.cs" />
+    <Compile Include="Dynamic\Generators\EventToGenerate.cs" />
+    <Compile Include="Dynamic\Generators\GeneratorException.cs" />
+    <Compile Include="Dynamic\Generators\InterfaceProxyWithoutTargetGenerator.cs" />
+    <Compile Include="Dynamic\Generators\InterfaceProxyWithTargetGenerator.cs" />
+    <Compile Include="Dynamic\Generators\InterfaceProxyWithTargetInterfaceGenerator.cs" />
+    <Compile Include="Dynamic\Generators\MethodFinder.cs" />
+    <Compile Include="Dynamic\Generators\MethodSignatureComparer.cs" />
+    <Compile Include="Dynamic\Generators\PropertyToGenerate.cs" />
+    <Compile Include="Dynamic\IInterceptorSelector.cs" />
+    <Compile Include="Dynamic\InternalsHelper.cs" />
+    <Compile Include="Dynamic\IProxyBuilder.cs" />
+    <Compile Include="Dynamic\IProxyGenerationHook.cs" />
+    <Compile Include="Dynamic\ModuleScope.cs" />
+    <Compile Include="Dynamic\PersistentProxyBuilder.cs" />
+    <Compile Include="Dynamic\ProxyGenerationOptions.cs" />
+    <Compile Include="Dynamic\ProxyGenerator.cs" />
+    <Compile Include="Dynamic\RemotableInvocation.cs" />
+    <Compile Include="Dynamic\Serialization\ProxyObjectReference.cs" />
+    <Compile Include="MethodMatchHelper.cs" />
+    <Compile Include="PartialBinding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remoting\InterceptingServerChannelSink.cs" />
+    <Compile Include="Remoting\InterceptingServerChannelSinkProvider.cs" />
+    <Compile Include="Remoting\RemotingProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OX.Strongbind.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

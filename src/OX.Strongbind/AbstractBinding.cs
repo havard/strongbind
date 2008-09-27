@@ -1,6 +1,6 @@
 namespace OX.Strongbind
 {
-    public class Binding
+    public abstract class AbstractBinding
     {
         private BindingPair source;
         private BindingPair target;
@@ -17,18 +17,13 @@ namespace OX.Strongbind
             set { target = value; }
         }
 
-        internal Binding(BindingPair source)
+        protected System.Windows.Forms.IBindableComponent BindableTarget
         {
-            this.source = source;
+            get { return (System.Windows.Forms.IBindableComponent)target.Object; }
         }
 
-        public void To(object value)
+        protected AbstractBinding()
         {
-            target = BindingPairHolder.ConsumeBindingPair();
-
-            System.Windows.Forms.IBindableComponent c = (System.Windows.Forms.IBindableComponent)target.Object;
-
-            c.DataBindings.Add(target.Member, source.Object, source.Member);
         }
     }
 }

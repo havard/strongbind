@@ -13,6 +13,8 @@
     <SccLocalPath>Svn</SccLocalPath>
     <SccAuxPath>Svn</SccAuxPath>
     <SccProvider>SubversionScc</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>OX.Strongbind.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,12 +45,16 @@
     <Compile Include="BusinessObject.cs" />
     <Compile Include="IBusinessObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemotingProxyTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OX.Strongbind\OX.Strongbind.csproj">
       <Project>{8E4A4DAA-ED2F-464F-B85E-70F3C00326F1}</Project>
       <Name>OX.Strongbind</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OX.Strongbind.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

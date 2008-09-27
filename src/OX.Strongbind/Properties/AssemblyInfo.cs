@@ -1,35 +1,19 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("OX.DataBinding")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OX.DataBinding")]
-[assembly: AssemblyCopyright("Copyright ©  2008")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
+[assembly: CLSCompliant(true)]
+[assembly: AssemblyTitle("Strongbind")]
+[assembly: AssemblyDescription("Strongbind enables strongly-typed data binding in Windows Forms applications")]
+[assembly: AssemblyCompany("Håvard Stranden")]
+[assembly: AssemblyProduct("OX.Strongbind")]
+[assembly: AssemblyCopyright("Copyright © 2008 Håvard Stranden - http://ox.no")]
+[assembly: AssemblyVersion("0.1.0.0")]
+[assembly: AssemblyInformationalVersion("0.1.0.1")]
+[assembly: AssemblyFileVersion("0.1.0.1")]
+[assembly: AssemblyDelaySign(false)]
+[assembly: AllowPartiallyTrustedCallers]
 [assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d28f007f-5d6c-467d-bf05-2a529c60edbc")]
-
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: InternalsVisibleTo("OX.Strongbind.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100a3a0e682b1ca5566f1a0cb010a26503c1539b1cc944b5f6417d4ce90fe9f3568dfa1dc08e6bccdff27ea10ffbe6defe2b232004128d5b2b63b4c71a5059364566011ccffd0890e0827f4c7d101fe5779740b3d4ee05d2209cf87cf9cb964f119e7d2a7d849af448e34a68d0d54a08bc406fe0b375fcc5886f9b4825bd20f0d98")]
