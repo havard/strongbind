@@ -1,9 +1,9 @@
 using Castle.DynamicProxy;
 namespace OX.Strongbind.Dynamic
 {
-    internal static class DynamicProxy
+    internal class DynamicProxy
     {
-        public static T For<T>(T instance)
+        public T For<T>(T instance)
         {
             DynamicProxyInterceptor interceptor = new DynamicProxyInterceptor(instance);
             ProxyGenerator generator = new ProxyGenerator();

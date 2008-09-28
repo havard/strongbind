@@ -50,22 +50,25 @@ namespace OX.Strongbind.Tests
         [Test]
         [ExpectedException(typeof(TargetInvocationException))]
         public void TestRemotingProxyForWebBrowser() { TestRemotingProxyFor<WebBrowser>(); }
-        
+
         private void TestRemotingProxyFor<T>() where T : Control, new()
         {
-            T t = new T();
-            T proxy = RemotingProxy.For(t);
+            using (RemotingProxy generator = new RemotingProxy())
+            {
+                T t = new T();
+                T proxy = generator.For(t);
 
-            proxy.Name = "foo";
-            Assert.AreEqual("foo", proxy.Name);
+                proxy.Name = "foo";
+                Assert.AreEqual("foo", proxy.Name);
 
-            // Check binding pair holder
-            BindingPair pair = BindingPairHolder.ConsumeBindingPair();
-            Assert.AreSame(t, pair.Object);
-            Assert.AreEqual("Name", pair.Member);
+                // Check binding pair holder
+                BindingPair pair = BindingPairHolder.ConsumeBindingPair();
+                Assert.AreSame(t, pair.Object);
+                Assert.AreEqual("Name", pair.Member);
 
-            // Test remoting proxy object registry
-            Assert.IsTrue(RemotingProxy.RemotedObjects.ContainsValue(t));
+                // Test remoting proxy object registry
+                Assert.IsTrue(generator.RemotedObjects.ContainsValue(t));
+            }
         }
     }
 }

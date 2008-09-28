@@ -4,14 +4,17 @@
 		{
 			%CONTROL% control = new %CONTROL%();
 			IBusinessObject obj = new BusinessObject();			
-			IBusinessObject bindableSource = Bindable.Source(obj);
 			
-			if(control is Control)
-				((Control)control).CreateControl();
-			control.BindingContext = new BindingContext();
+			using(BindingScope scope = new BindingScope())
+			{
+				IBusinessObject bindableSource = scope.CreateSource(obj);
+				
+				if(control is Control)
+					((Control)control).CreateControl();
+				control.BindingContext = new BindingContext();
 			
-			%CONTROL% bindableTarget = Bindable.Target(control);
-			
+				%CONTROL% bindableTarget = scope.CreateTarget(control);
 %BINDINGS%
+			}
 		}
 		

@@ -46,6 +46,7 @@
     <Compile Include="AbstractBinding.cs" />
     <Compile Include="BindingPair.cs" />
     <Compile Include="BindingPairHolder.cs" />
+    <Compile Include="BindingScope.cs" />
     <Compile Include="CompleteBinding.cs" />
     <Compile Include="Dynamic\AbstractInvocation.cs" />
     <Compile Include="Dynamic\AllMethodsHook.cs" />

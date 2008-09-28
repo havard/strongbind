@@ -1,12 +1,12 @@
-			int dataBindingsBefore%TARGETPROPERTY% = control.DataBindings.Count;
-			
-			Binder.Bind(bindableSource.%SOURCEPROPERTY%).To(bindableTarget.%TARGETPROPERTY%);
+				int dataBindingsBefore%TARGETPROPERTY% = control.DataBindings.Count;
+				
+				Binder.Bind(bindableSource.%SOURCEPROPERTY%).To(bindableTarget.%TARGETPROPERTY%);
 
-			Assert.AreEqual(dataBindingsBefore%TARGETPROPERTY% + 1, control.DataBindings.Count);
-			
-			Assert.AreEqual(control.%TARGETPROPERTY%, obj.%SOURCEPROPERTY%);
-			
-			obj.Change%SOURCEPROPERTY%();
-			
-			Assert.AreEqual(control.%TARGETPROPERTY%, obj.%SOURCEPROPERTY%);
+				Assert.AreEqual(dataBindingsBefore%TARGETPROPERTY% + 1, control.DataBindings.Count);
+				
+				Assert.AreEqual(control.%TARGETPROPERTY%, obj.%SOURCEPROPERTY%);
+				
+				obj.Change%SOURCEPROPERTY%();
+				
+				Assert.AreEqual(control.%TARGETPROPERTY%, obj.%SOURCEPROPERTY%);
 

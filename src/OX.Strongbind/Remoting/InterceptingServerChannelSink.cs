@@ -5,13 +5,14 @@ namespace OX.Strongbind.Remoting
     using System.IO;
     using System;
 
-
     internal class InterceptingServerChannelSink : IServerChannelSink
     {
         private IServerChannelSink next;
+        private RemotingProxy proxy;
 
-        public InterceptingServerChannelSink()
+        public InterceptingServerChannelSink(RemotingProxy proxy)
         {
+            this.proxy = proxy;
         }
 
         #region IServerChannelSink Members
@@ -42,7 +43,7 @@ namespace OX.Strongbind.Remoting
                     string identity = call.Uri.Substring(call.Uri.LastIndexOf('/') + 1);
                     string propertyName = MethodMatchHelper.PropertyNameFromGetter(call.MethodBase);
 
-                    BindingPairHolder.DeclareBindingPair(RemotingProxy.RemotedObjects[identity], propertyName);
+                    BindingPairHolder.DeclareBindingPair(proxy.RemotedObjects[identity], propertyName);
                 }
             }
             return NextChannelSink.ProcessMessage(sinkStack, requestMsg, requestHeaders, requestStream, out responseMsg, out responseHeaders, out responseStream);

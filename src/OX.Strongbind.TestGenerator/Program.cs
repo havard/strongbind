@@ -12,6 +12,7 @@ namespace OX.Strongbind.TestGenerator
     {
         readonly static List<string> IgnoreClassesList = new List<string>(new string[] { "WebBrowser" });
         readonly static List<string> IgnorePropertiesList = new List<string>(new string[] { 
+            "BindingNavigator.Text",
             "CheckedListBox.ItemHeight", 
             "CheckedListBox.SelectedIndex", 
             "CheckedListBox.TopIndex",
