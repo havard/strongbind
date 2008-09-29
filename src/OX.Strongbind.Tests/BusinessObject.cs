@@ -1,9 +1,9 @@
-using System;
-using System.ComponentModel;
-using System.Drawing;
-
 namespace OX.Strongbind.Tests
 {
+    using System;
+    using System.ComponentModel;
+    using System.Drawing;
+
     public class BusinessObject : IBusinessObject, INotifyPropertyChanged
     {
         private string name;

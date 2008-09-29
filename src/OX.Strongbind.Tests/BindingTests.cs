@@ -1,10 +1,10 @@
-using System.Windows.Forms;
-using NUnit.Framework;
-
 namespace OX.Strongbind.Tests
 {
+    using System.Windows.Forms;
+    using NUnit.Framework;
+
     [TestFixture]
-    public class BinderTest
+    public class BindingTests
     {
         [Test]
         public void TestOneWayBinding()

@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\OX.Strongbind.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,13 +33,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\OX.Strongbind.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Binder.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Dynamic\ProxyGenerator.cs" />
     <Compile Include="Dynamic\RemotableInvocation.cs" />
     <Compile Include="Dynamic\Serialization\ProxyObjectReference.cs" />
+    <Compile Include="IBindingScope.cs" />
     <Compile Include="MethodMatchHelper.cs" />
     <Compile Include="PartialBinding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

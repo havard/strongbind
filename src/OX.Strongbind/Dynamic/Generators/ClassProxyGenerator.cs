@@ -21,7 +21,7 @@ namespace Castle.DynamicProxy.Generators
 	using System.Reflection.Emit;
 	using System.Runtime.Serialization;
 	using System.Threading;
-	using System.Xml.Serialization;
+    using System.Xml.Serialization;
 	using Castle.Core.Interceptor;
 	using Castle.DynamicProxy.Generators.Emitters;
 	using Castle.DynamicProxy.Generators.Emitters.CodeBuilders;

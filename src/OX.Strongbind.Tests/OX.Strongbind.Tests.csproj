@@ -42,12 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinderTest.cs" />
+    <Compile Include="BindingScopeTests.cs" />
+    <Compile Include="BindingTests.cs" />
     <Compile Include="BusinessObject.cs" />
     <Compile Include="GeneratedBindingTests.cs" />
     <Compile Include="IBusinessObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemotingProxyTest.cs" />
+    <Compile Include="RemotingProxyTests.cs" />
+    <Compile Include="PartialUsageTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OX.Strongbind\OX.Strongbind.csproj">

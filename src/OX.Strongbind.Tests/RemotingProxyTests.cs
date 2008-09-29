@@ -1,13 +1,14 @@
-using NUnit.Framework;
-using System.Windows.Forms;
-using System;
-using OX.Strongbind.Remoting;
-using System.Reflection;
-
 namespace OX.Strongbind.Tests
 {
+    using NUnit.Framework;
+    using System;
+    using System.Reflection;
+    using System.Windows.Forms;
+    using OX.Strongbind.Remoting;
+    
+
     [TestFixture]
-    public class RemotingProxyTest
+    public class RemotingProxyTests
     {
         [Test]
         public void TestRemotingProxyForButton() { TestRemotingProxyFor<Button>(); }
@@ -51,9 +52,38 @@ namespace OX.Strongbind.Tests
         [ExpectedException(typeof(TargetInvocationException))]
         public void TestRemotingProxyForWebBrowser() { TestRemotingProxyFor<WebBrowser>(); }
 
+        class BindingScopeStub : IBindingScope
+        {
+            #region IBindingScope Members
+
+            public T CreateSource<T>(T instance)
+            {
+                return default(T);
+            }
+
+            public T CreateTarget<T>(T instance) where T : IBindableComponent, new()
+            {
+                return default(T);
+            }
+
+            public bool IsDisposed
+            {
+                get { return false; }
+            }
+
+            #endregion
+
+            #region IDisposable Members
+
+            public void Dispose()
+            {
+            }
+
+            #endregion
+        }
         private void TestRemotingProxyFor<T>() where T : Control, new()
         {
-            using (RemotingProxy generator = new RemotingProxy())
+            using (RemotingProxy generator = new RemotingProxy(new BindingScopeStub()))
             {
                 T t = new T();
                 T proxy = generator.For(t);

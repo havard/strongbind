@@ -11,14 +11,17 @@ namespace OX.Strongbind.Remoting
 
     internal class RemotingProxy : IDisposable
     {        
-        readonly internal Dictionary<string, MarshalByRefObject> RemotedObjects;
-        readonly string channelName;
-        readonly IpcChannel clientChannel;
-        readonly IpcServerChannel serverChannel;
+        private readonly Dictionary<string, MarshalByRefObject> remotedObjects;
+        private readonly string channelName;
+        private readonly IpcChannel clientChannel;
+        private readonly IpcServerChannel serverChannel;
+        private readonly IBindingScope scope;
 
-        public RemotingProxy()
+        public RemotingProxy(IBindingScope scope)
         {
-            RemotedObjects = new Dictionary<string, MarshalByRefObject>();
+            this.scope = scope;
+
+            remotedObjects = new Dictionary<string, MarshalByRefObject>();
 
             channelName = Guid.NewGuid().ToString();
 
@@ -35,12 +38,18 @@ namespace OX.Strongbind.Remoting
         
         public T For<T>(T instance)
         {
+            ThrowIfScopeIsDisposed();
             return Create(instance);
         }
 
         public void Dispose()
         {
             ClearRemotedObjects();
+        }
+
+        internal Dictionary<string, MarshalByRefObject> RemotedObjects
+        {
+            get { return remotedObjects; }
         }
         
         private T Create<T>(T control)
@@ -63,6 +72,12 @@ namespace OX.Strongbind.Remoting
 
             serverChannel.StopListening(null);
             ChannelServices.UnregisterChannel(serverChannel);
+        }
+
+        private void ThrowIfScopeIsDisposed()
+        {
+            if (scope.IsDisposed)
+                throw new InvalidOperationException("Cannot create a proxy since the binding scope has been disposed.");
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿
-using System.Drawing;
-namespace OX.Strongbind.Tests
+﻿namespace OX.Strongbind.Tests
 {
     public interface IBusinessObject
     {

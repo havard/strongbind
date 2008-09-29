@@ -1,13 +1,16 @@
-using Castle.Core.Interceptor;
-
 namespace OX.Strongbind.Dynamic
 {
+    using Castle.Core.Interceptor;
+    using System; 
+
     internal class DynamicProxyInterceptor : IInterceptor
     {
+        private IBindingScope scope;
         private object proxied;
 
-        public DynamicProxyInterceptor(object original)
+        public DynamicProxyInterceptor(IBindingScope scope, object original)
         {
+            this.scope = scope;
             proxied = original;
         }
 
@@ -15,6 +18,8 @@ namespace OX.Strongbind.Dynamic
 
         public void Intercept(IInvocation invocation)
         {
+            ThrowIfScopeIsDisposed();
+
             if (!MethodMatchHelper.IsGetter(invocation.Method))
                 return;
 
@@ -25,5 +30,11 @@ namespace OX.Strongbind.Dynamic
         }
 
         #endregion
+
+        private void ThrowIfScopeIsDisposed()
+        {
+            if (scope.IsDisposed)
+                throw new InvalidOperationException("Cannot create a proxy since the binding scope has been disposed.");
+        }
     }
 }
