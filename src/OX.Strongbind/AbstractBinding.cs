@@ -10,13 +10,13 @@ namespace OX.Strongbind
         private BindingPair source;
         private BindingPair target;
 
-        internal BindingPair Source
+        public BindingPair Source
         {
             get { return source; }
             set { source = value; }
         }
 
-        internal BindingPair Target
+        public BindingPair Target
         {
             get { return target; }
             set { target = value; }

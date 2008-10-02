@@ -23,7 +23,7 @@ namespace OX.Strongbind
         /// Consumes any currently held binding pair.
         /// </summary>
         /// <returns>The consumed binding pair.</returns>
-        public static BindingPair ConsumeBindingPair()
+        internal static BindingPair ConsumeBindingPair()
         {
             BindingPair toReturn = null;
             lock (syncroot)
