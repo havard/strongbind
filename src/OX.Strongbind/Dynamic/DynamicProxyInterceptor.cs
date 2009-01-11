@@ -7,11 +7,13 @@ namespace OX.Strongbind.Dynamic
     {
         private IBindingScope scope;
         private object proxied;
+        private BindingPairHolder bindingPairHolder;
 
-        public DynamicProxyInterceptor(IBindingScope scope, object original)
+        public DynamicProxyInterceptor(IBindingScope scope, object original, BindingPairHolder bindingPairHolder)
         {
             this.scope = scope;
             proxied = original;
+            this.bindingPairHolder = bindingPairHolder;
         }
 
         #region IInterceptor Members
@@ -22,11 +24,30 @@ namespace OX.Strongbind.Dynamic
 
             if (!MethodMatchHelper.IsGetter(invocation.Method))
                 return;
+            
+            object returnValue = null;
+            if(proxied != null)
+                returnValue = invocation.Method.Invoke(proxied, invocation.Arguments);
 
-            invocation.ReturnValue = invocation.Method.Invoke(proxied, invocation.Arguments);
+            try
+            {
+                invocation.ReturnValue = new DynamicProxy(scope, bindingPairHolder).For(invocation.Method.ReturnType, returnValue);
+            }
+            catch
+            {
+                // Create a default instance
+                try
+                {
+                    invocation.ReturnValue = Activator.CreateInstance(invocation.Method.ReturnType);
+                }
+                catch
+                {
+                    invocation.ReturnValue = null;
+                }
+            }
 
             string propertyName = MethodMatchHelper.PropertyNameFromGetter(invocation.Method);
-            BindingPairHolder.DeclareBindingPair(proxied, propertyName);
+            bindingPairHolder.DeclareBindingPair(proxied, propertyName);
         }
 
         #endregion

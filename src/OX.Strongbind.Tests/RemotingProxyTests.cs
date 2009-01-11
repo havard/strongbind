@@ -71,6 +71,11 @@ namespace OX.Strongbind.Tests
                 get { return false; }
             }
 
+            public PartialBinding Bind(object propertyValue)
+            {
+                return null;
+            }
+
             #endregion
 
             #region IDisposable Members
@@ -83,7 +88,8 @@ namespace OX.Strongbind.Tests
         }
         private void TestRemotingProxyFor<T>() where T : Control, new()
         {
-            using (RemotingProxy generator = new RemotingProxy(new BindingScopeStub()))
+            BindingPairHolder bindingPairHolder = new BindingPairHolder();
+            using (RemotingProxy generator = new RemotingProxy(new BindingScopeStub(), bindingPairHolder))
             {
                 T t = new T();
                 T proxy = generator.For(t);
@@ -92,7 +98,7 @@ namespace OX.Strongbind.Tests
                 Assert.AreEqual("foo", proxy.Name);
 
                 // Check binding pair holder
-                BindingPair pair = BindingPairHolder.ConsumeBindingPair();
+                BindingPair pair = bindingPairHolder.ConsumeBindingPair();
                 Assert.AreSame(t, pair.Object);
                 Assert.AreEqual("Name", pair.Member);
 

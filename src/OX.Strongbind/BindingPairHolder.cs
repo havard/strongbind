@@ -1,37 +1,51 @@
 namespace OX.Strongbind
 {
+    using System.Collections.Generic;
+    using System.Text;
+
     /// <summary>
     /// Holds binding pairs for consumption by the Strongbind
     /// framework. Binding pairs can be eithar sources or targets,
     /// for the binding, depending on the context in which they are 
     /// consumed by Strongbind. If a binding pair is consumed by
-    /// a call to <see cref="Binder.Bind" />, the binding pair
+    /// a call to <see cref="BindingScope.Bind" />, the binding pair
     /// will become a source for the binding. If a binding pair
     /// is consumed by a call to <see cref="PartialBinding.To" />
     /// or <see cref="CompleteBinding.And" />, the binding pair
     /// will become a target for the binding.
     /// 
     /// To declare bindings, see the <see cref="BindingScope" />
-    /// and <see cref="Binder"/> classes.
+    /// class.
     /// </summary>
-    public static class BindingPairHolder
+    public class BindingPairHolder
     {
-        private static object syncroot = new object();
-        private static BindingPair currentPair;
+        private List<BindingPair> bindingPairs;
 
-        /// <summary>
-        /// Consumes any currently held binding pair.
-        /// </summary>
-        /// <returns>The consumed binding pair.</returns>
-        internal static BindingPair ConsumeBindingPair()
+        internal BindingPairHolder()
         {
-            BindingPair toReturn = null;
-            lock (syncroot)
+            bindingPairs = new List<BindingPair>();
+        }
+
+        internal BindingPair ConsumeBindingPair()
+        {
+            object source = null;
+            StringBuilder bindingPath = new StringBuilder();
+
+            foreach (BindingPair pair in bindingPairs)
             {
-                toReturn = currentPair;
-                currentPair = null;
+                if (source == null)
+                    source = pair.Object;
+                bindingPath.Append(pair.Member);
+                bindingPath.Append('.');
             }
-            return toReturn;
+
+            if(source == null)
+                return null;
+
+            bindingPairs.Clear();
+
+            bindingPath.Remove(bindingPath.Length - 1, 1);
+            return new BindingPair(source, bindingPath.ToString());
         }
 
         /// <summary>
@@ -41,12 +55,9 @@ namespace OX.Strongbind
         /// </summary>
         /// <param name="instance">The object part of the binding pair.</param>
         /// <param name="member">The property name part of the binding pair.</param>
-        public static void DeclareBindingPair(object instance, string member)
+        internal void DeclareBindingPair(object instance, string member)
         {
-            lock (syncroot)
-            {
-                currentPair = new BindingPair(instance, member);
-            }
+            bindingPairs.Add(new BindingPair(instance, member));
         }
     }
 }

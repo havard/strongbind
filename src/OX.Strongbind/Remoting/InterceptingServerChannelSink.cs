@@ -9,10 +9,12 @@ namespace OX.Strongbind.Remoting
     {
         private IServerChannelSink next;
         private RemotingProxy proxy;
+        private BindingPairHolder bindingPairHolder;
 
-        public InterceptingServerChannelSink(RemotingProxy proxy)
+        public InterceptingServerChannelSink(RemotingProxy proxy, BindingPairHolder bindingPairHolder)
         {
             this.proxy = proxy;
+            this.bindingPairHolder = bindingPairHolder;
         }
 
         #region IServerChannelSink Members
@@ -43,7 +45,7 @@ namespace OX.Strongbind.Remoting
                     string identity = call.Uri.Substring(call.Uri.LastIndexOf('/') + 1);
                     string propertyName = MethodMatchHelper.PropertyNameFromGetter(call.MethodBase);
 
-                    BindingPairHolder.DeclareBindingPair(proxy.RemotedObjects[identity], propertyName);
+                    bindingPairHolder.DeclareBindingPair(proxy.RemotedObjects[identity], propertyName);
                 }
             }
             return NextChannelSink.ProcessMessage(sinkStack, requestMsg, requestHeaders, requestStream, out responseMsg, out responseHeaders, out responseStream);

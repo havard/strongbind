@@ -33,7 +33,7 @@ namespace OX.Strongbind
         /// <summary>
         /// Constructs a new binding pair.
         /// </summary>
-        /// <param name="source">The object part of the binding pair. 
+        /// <param name="instance">The object part of the binding pair. 
         /// Whether the object is a source or target depends on the
         /// context it is used in.</param>
         /// <param name="member">The property name part of the binding pair.</param>

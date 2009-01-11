@@ -6,17 +6,19 @@ namespace OX.Strongbind.Remoting
     {
         private IServerChannelSinkProvider next;
         private RemotingProxy proxy;
+        private BindingPairHolder bindingPairHolder;
 
-        public InterceptingServerChannelSinkProvider(RemotingProxy proxy)
+        public InterceptingServerChannelSinkProvider(RemotingProxy proxy, BindingPairHolder bindingPairHolder)
         {
             this.proxy = proxy;
+            this.bindingPairHolder = bindingPairHolder;
         }
 
         #region IServerChannelSinkProvider Members
 
         public IServerChannelSink CreateSink(IChannelReceiver channel)
         {
-            InterceptingServerChannelSink g = new InterceptingServerChannelSink(proxy);
+            InterceptingServerChannelSink g = new InterceptingServerChannelSink(proxy, bindingPairHolder);
             BinaryServerFormatterSink formatter = new BinaryServerFormatterSink(BinaryServerFormatterSink.Protocol.Other, g, channel);
 
             if (next != null)

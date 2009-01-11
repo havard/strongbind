@@ -24,7 +24,7 @@ namespace OX.Strongbind.Tests
 				Control bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -36,7 +36,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -48,7 +48,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -60,7 +60,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -72,7 +72,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -84,7 +84,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -96,7 +96,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -108,7 +108,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -120,7 +120,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -132,7 +132,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -164,7 +164,7 @@ namespace OX.Strongbind.Tests
 				ScrollableControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -176,7 +176,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -188,7 +188,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -200,7 +200,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -212,7 +212,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -224,7 +224,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -236,7 +236,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -248,7 +248,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -260,7 +260,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -272,7 +272,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -304,7 +304,7 @@ namespace OX.Strongbind.Tests
 				ContainerControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -316,7 +316,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -328,7 +328,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -340,7 +340,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -352,7 +352,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -364,7 +364,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -376,7 +376,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -388,7 +388,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -400,7 +400,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -412,7 +412,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -444,7 +444,7 @@ namespace OX.Strongbind.Tests
 				ToolStrip bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -456,7 +456,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -468,7 +468,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -480,7 +480,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -492,7 +492,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -504,7 +504,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -516,7 +516,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -528,7 +528,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -540,7 +540,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -552,7 +552,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -584,7 +584,7 @@ namespace OX.Strongbind.Tests
 				BindingNavigator bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeCountItemFormat = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.CountItemFormat);
+				scope.Bind(bindableSource.Name).To(bindableTarget.CountItemFormat);
 
 				Assert.AreEqual(dataBindingsBeforeCountItemFormat + 1, control.DataBindings.Count);
 				
@@ -596,7 +596,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -608,7 +608,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -620,7 +620,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -632,7 +632,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -644,7 +644,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -656,7 +656,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -668,7 +668,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -680,7 +680,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -692,7 +692,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -724,7 +724,7 @@ namespace OX.Strongbind.Tests
 				Button bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -736,7 +736,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -748,7 +748,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -760,7 +760,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -772,7 +772,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -784,7 +784,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -796,7 +796,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -808,7 +808,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -820,7 +820,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -832,7 +832,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -844,7 +844,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -856,7 +856,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -888,7 +888,7 @@ namespace OX.Strongbind.Tests
 				CheckBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -900,7 +900,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -912,7 +912,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -924,7 +924,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -936,7 +936,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -948,7 +948,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -960,7 +960,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -972,7 +972,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -984,7 +984,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -996,7 +996,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -1008,7 +1008,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -1020,7 +1020,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -1052,7 +1052,7 @@ namespace OX.Strongbind.Tests
 				ListBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeColumnWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ColumnWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ColumnWidth);
 
 				Assert.AreEqual(dataBindingsBeforeColumnWidth + 1, control.DataBindings.Count);
 				
@@ -1064,7 +1064,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHorizontalExtent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalExtent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalExtent);
 
 				Assert.AreEqual(dataBindingsBeforeHorizontalExtent + 1, control.DataBindings.Count);
 				
@@ -1076,7 +1076,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -1088,7 +1088,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDisplayMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
 
 				Assert.AreEqual(dataBindingsBeforeDisplayMember + 1, control.DataBindings.Count);
 				
@@ -1100,7 +1100,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeFormatString = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.FormatString);
+				scope.Bind(bindableSource.Name).To(bindableTarget.FormatString);
 
 				Assert.AreEqual(dataBindingsBeforeFormatString + 1, control.DataBindings.Count);
 				
@@ -1112,7 +1112,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValueMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
 
 				Assert.AreEqual(dataBindingsBeforeValueMember + 1, control.DataBindings.Count);
 				
@@ -1124,7 +1124,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -1136,7 +1136,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -1148,7 +1148,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -1160,7 +1160,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -1172,7 +1172,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -1184,7 +1184,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -1196,7 +1196,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -1208,7 +1208,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -1240,7 +1240,7 @@ namespace OX.Strongbind.Tests
 				CheckedListBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeDisplayMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
 
 				Assert.AreEqual(dataBindingsBeforeDisplayMember + 1, control.DataBindings.Count);
 				
@@ -1252,7 +1252,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValueMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
 
 				Assert.AreEqual(dataBindingsBeforeValueMember + 1, control.DataBindings.Count);
 				
@@ -1264,7 +1264,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeColumnWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ColumnWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ColumnWidth);
 
 				Assert.AreEqual(dataBindingsBeforeColumnWidth + 1, control.DataBindings.Count);
 				
@@ -1276,7 +1276,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHorizontalExtent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalExtent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalExtent);
 
 				Assert.AreEqual(dataBindingsBeforeHorizontalExtent + 1, control.DataBindings.Count);
 				
@@ -1288,7 +1288,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -1300,7 +1300,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeFormatString = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.FormatString);
+				scope.Bind(bindableSource.Name).To(bindableTarget.FormatString);
 
 				Assert.AreEqual(dataBindingsBeforeFormatString + 1, control.DataBindings.Count);
 				
@@ -1312,7 +1312,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -1324,7 +1324,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -1336,7 +1336,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -1348,7 +1348,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -1360,7 +1360,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -1372,7 +1372,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -1384,7 +1384,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -1396,7 +1396,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -1428,7 +1428,7 @@ namespace OX.Strongbind.Tests
 				ComboBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeDropDownWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.DropDownWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.DropDownWidth);
 
 				Assert.AreEqual(dataBindingsBeforeDropDownWidth + 1, control.DataBindings.Count);
 				
@@ -1440,7 +1440,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDropDownHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.DropDownHeight);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.DropDownHeight);
 
 				Assert.AreEqual(dataBindingsBeforeDropDownHeight + 1, control.DataBindings.Count);
 				
@@ -1452,7 +1452,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxDropDownItems = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxDropDownItems);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxDropDownItems);
 
 				Assert.AreEqual(dataBindingsBeforeMaxDropDownItems + 1, control.DataBindings.Count);
 				
@@ -1464,7 +1464,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -1476,7 +1476,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -1488,7 +1488,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDisplayMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
 
 				Assert.AreEqual(dataBindingsBeforeDisplayMember + 1, control.DataBindings.Count);
 				
@@ -1500,7 +1500,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeFormatString = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.FormatString);
+				scope.Bind(bindableSource.Name).To(bindableTarget.FormatString);
 
 				Assert.AreEqual(dataBindingsBeforeFormatString + 1, control.DataBindings.Count);
 				
@@ -1512,7 +1512,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValueMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
 
 				Assert.AreEqual(dataBindingsBeforeValueMember + 1, control.DataBindings.Count);
 				
@@ -1524,7 +1524,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -1536,7 +1536,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -1548,7 +1548,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -1560,7 +1560,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -1572,7 +1572,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -1584,7 +1584,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -1596,7 +1596,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -1608,7 +1608,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -1700,7 +1700,7 @@ namespace OX.Strongbind.Tests
 				DataGrid bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeCaptionText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.CaptionText);
+				scope.Bind(bindableSource.Name).To(bindableTarget.CaptionText);
 
 				Assert.AreEqual(dataBindingsBeforeCaptionText + 1, control.DataBindings.Count);
 				
@@ -1712,7 +1712,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDataMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DataMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DataMember);
 
 				Assert.AreEqual(dataBindingsBeforeDataMember + 1, control.DataBindings.Count);
 				
@@ -1724,7 +1724,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforePreferredColumnWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.PreferredColumnWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.PreferredColumnWidth);
 
 				Assert.AreEqual(dataBindingsBeforePreferredColumnWidth + 1, control.DataBindings.Count);
 				
@@ -1736,7 +1736,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforePreferredRowHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.PreferredRowHeight);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.PreferredRowHeight);
 
 				Assert.AreEqual(dataBindingsBeforePreferredRowHeight + 1, control.DataBindings.Count);
 				
@@ -1748,7 +1748,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRowHeaderWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.RowHeaderWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.RowHeaderWidth);
 
 				Assert.AreEqual(dataBindingsBeforeRowHeaderWidth + 1, control.DataBindings.Count);
 				
@@ -1760,7 +1760,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -1772,7 +1772,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -1784,7 +1784,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -1796,7 +1796,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -1808,7 +1808,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -1820,7 +1820,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -1832,7 +1832,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -1844,7 +1844,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -1856,7 +1856,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -1868,7 +1868,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -1900,7 +1900,7 @@ namespace OX.Strongbind.Tests
 				TextBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -1912,7 +1912,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -1924,7 +1924,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionLength);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionLength + 1, control.DataBindings.Count);
 				
@@ -1936,7 +1936,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionStart = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionStart);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionStart);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionStart + 1, control.DataBindings.Count);
 				
@@ -1948,7 +1948,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -1960,7 +1960,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -1972,7 +1972,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -1984,7 +1984,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -1996,7 +1996,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2008,7 +2008,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2020,7 +2020,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2032,7 +2032,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2064,7 +2064,7 @@ namespace OX.Strongbind.Tests
 				DataGridTextBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -2076,7 +2076,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -2088,7 +2088,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionLength);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionLength + 1, control.DataBindings.Count);
 				
@@ -2100,7 +2100,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionStart = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionStart);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionStart);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionStart + 1, control.DataBindings.Count);
 				
@@ -2112,7 +2112,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -2124,7 +2124,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -2136,7 +2136,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -2148,7 +2148,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2160,7 +2160,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2172,7 +2172,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2184,7 +2184,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2196,7 +2196,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2228,7 +2228,7 @@ namespace OX.Strongbind.Tests
 				DataGridView bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeColumnCount = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ColumnCount);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ColumnCount);
 
 				Assert.AreEqual(dataBindingsBeforeColumnCount + 1, control.DataBindings.Count);
 				
@@ -2240,7 +2240,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeColumnHeadersHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ColumnHeadersHeight);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ColumnHeadersHeight);
 
 				Assert.AreEqual(dataBindingsBeforeColumnHeadersHeight + 1, control.DataBindings.Count);
 				
@@ -2252,7 +2252,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDataMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DataMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DataMember);
 
 				Assert.AreEqual(dataBindingsBeforeDataMember + 1, control.DataBindings.Count);
 				
@@ -2264,7 +2264,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHorizontalScrollingOffset = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalScrollingOffset);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.HorizontalScrollingOffset);
 
 				Assert.AreEqual(dataBindingsBeforeHorizontalScrollingOffset + 1, control.DataBindings.Count);
 				
@@ -2276,7 +2276,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRowCount = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.RowCount);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.RowCount);
 
 				Assert.AreEqual(dataBindingsBeforeRowCount + 1, control.DataBindings.Count);
 				
@@ -2288,7 +2288,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRowHeadersWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.RowHeadersWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.RowHeadersWidth);
 
 				Assert.AreEqual(dataBindingsBeforeRowHeadersWidth + 1, control.DataBindings.Count);
 				
@@ -2300,7 +2300,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -2312,7 +2312,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -2324,7 +2324,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -2336,7 +2336,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -2348,7 +2348,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -2360,7 +2360,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2372,7 +2372,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2384,7 +2384,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2396,7 +2396,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2408,7 +2408,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2440,7 +2440,7 @@ namespace OX.Strongbind.Tests
 				DataGridViewComboBoxEditingControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeEditingControlRowIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.EditingControlRowIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.EditingControlRowIndex);
 
 				Assert.AreEqual(dataBindingsBeforeEditingControlRowIndex + 1, control.DataBindings.Count);
 				
@@ -2452,7 +2452,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDropDownWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.DropDownWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.DropDownWidth);
 
 				Assert.AreEqual(dataBindingsBeforeDropDownWidth + 1, control.DataBindings.Count);
 				
@@ -2464,7 +2464,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDropDownHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.DropDownHeight);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.DropDownHeight);
 
 				Assert.AreEqual(dataBindingsBeforeDropDownHeight + 1, control.DataBindings.Count);
 				
@@ -2476,7 +2476,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxDropDownItems = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxDropDownItems);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxDropDownItems);
 
 				Assert.AreEqual(dataBindingsBeforeMaxDropDownItems + 1, control.DataBindings.Count);
 				
@@ -2488,7 +2488,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -2500,7 +2500,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -2512,7 +2512,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeDisplayMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.DisplayMember);
 
 				Assert.AreEqual(dataBindingsBeforeDisplayMember + 1, control.DataBindings.Count);
 				
@@ -2524,7 +2524,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeFormatString = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.FormatString);
+				scope.Bind(bindableSource.Name).To(bindableTarget.FormatString);
 
 				Assert.AreEqual(dataBindingsBeforeFormatString + 1, control.DataBindings.Count);
 				
@@ -2536,7 +2536,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValueMember = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ValueMember);
 
 				Assert.AreEqual(dataBindingsBeforeValueMember + 1, control.DataBindings.Count);
 				
@@ -2548,7 +2548,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2560,7 +2560,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2572,7 +2572,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2584,7 +2584,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2596,7 +2596,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2628,7 +2628,7 @@ namespace OX.Strongbind.Tests
 				DataGridViewTextBoxEditingControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeEditingControlRowIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.EditingControlRowIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.EditingControlRowIndex);
 
 				Assert.AreEqual(dataBindingsBeforeEditingControlRowIndex + 1, control.DataBindings.Count);
 				
@@ -2640,7 +2640,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -2652,7 +2652,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2664,7 +2664,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2676,7 +2676,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2688,7 +2688,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2700,7 +2700,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2732,7 +2732,7 @@ namespace OX.Strongbind.Tests
 				DateTimePicker bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeCustomFormat = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.CustomFormat);
+				scope.Bind(bindableSource.Name).To(bindableTarget.CustomFormat);
 
 				Assert.AreEqual(dataBindingsBeforeCustomFormat + 1, control.DataBindings.Count);
 				
@@ -2744,7 +2744,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -2756,7 +2756,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -2768,7 +2768,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -2780,7 +2780,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2792,7 +2792,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2804,7 +2804,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2816,7 +2816,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2828,7 +2828,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2860,7 +2860,7 @@ namespace OX.Strongbind.Tests
 				DomainUpDown bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -2872,7 +2872,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -2884,7 +2884,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -2896,7 +2896,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -2908,7 +2908,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -2920,7 +2920,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -2932,7 +2932,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -2944,7 +2944,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -2956,7 +2956,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -2988,7 +2988,7 @@ namespace OX.Strongbind.Tests
 				Panel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3000,7 +3000,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3012,7 +3012,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3024,7 +3024,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3036,7 +3036,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3048,7 +3048,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3060,7 +3060,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3072,7 +3072,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3084,7 +3084,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3096,7 +3096,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3128,7 +3128,7 @@ namespace OX.Strongbind.Tests
 				FlowLayoutPanel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3140,7 +3140,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3152,7 +3152,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3164,7 +3164,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3176,7 +3176,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3188,7 +3188,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3200,7 +3200,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3212,7 +3212,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3224,7 +3224,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3236,7 +3236,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3288,7 +3288,7 @@ namespace OX.Strongbind.Tests
 				GroupBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3300,7 +3300,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3312,7 +3312,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3324,7 +3324,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3336,7 +3336,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3348,7 +3348,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3360,7 +3360,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3372,7 +3372,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3384,7 +3384,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3396,7 +3396,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3428,7 +3428,7 @@ namespace OX.Strongbind.Tests
 				HScrollBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeLargeChange = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
 
 				Assert.AreEqual(dataBindingsBeforeLargeChange + 1, control.DataBindings.Count);
 				
@@ -3440,7 +3440,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaximum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
 
 				Assert.AreEqual(dataBindingsBeforeMaximum + 1, control.DataBindings.Count);
 				
@@ -3452,7 +3452,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinimum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
 
 				Assert.AreEqual(dataBindingsBeforeMinimum + 1, control.DataBindings.Count);
 				
@@ -3464,7 +3464,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3476,7 +3476,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValue = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Value);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Value);
 
 				Assert.AreEqual(dataBindingsBeforeValue + 1, control.DataBindings.Count);
 				
@@ -3488,7 +3488,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3500,7 +3500,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3512,7 +3512,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3524,7 +3524,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3536,7 +3536,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3548,7 +3548,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3560,7 +3560,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3572,7 +3572,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3584,7 +3584,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3616,7 +3616,7 @@ namespace OX.Strongbind.Tests
 				Label bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -3628,7 +3628,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -3640,7 +3640,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3652,7 +3652,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3664,7 +3664,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3676,7 +3676,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3688,7 +3688,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3700,7 +3700,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3712,7 +3712,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3724,7 +3724,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3736,7 +3736,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3748,7 +3748,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3780,7 +3780,7 @@ namespace OX.Strongbind.Tests
 				LinkLabel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3792,7 +3792,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -3804,7 +3804,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -3816,7 +3816,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3828,7 +3828,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3840,7 +3840,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -3852,7 +3852,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -3864,7 +3864,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -3876,7 +3876,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -3888,7 +3888,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -3900,7 +3900,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -3912,7 +3912,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -3944,7 +3944,7 @@ namespace OX.Strongbind.Tests
 				ListView bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -3956,7 +3956,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeVirtualListSize = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.VirtualListSize);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.VirtualListSize);
 
 				Assert.AreEqual(dataBindingsBeforeVirtualListSize + 1, control.DataBindings.Count);
 				
@@ -3968,7 +3968,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -3980,7 +3980,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -3992,7 +3992,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4004,7 +4004,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -4016,7 +4016,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4028,7 +4028,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4040,7 +4040,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4052,7 +4052,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4064,7 +4064,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4096,7 +4096,7 @@ namespace OX.Strongbind.Tests
 				MaskedTextBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeMask = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Mask);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Mask);
 
 				Assert.AreEqual(dataBindingsBeforeMask + 1, control.DataBindings.Count);
 				
@@ -4108,7 +4108,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -4120,7 +4120,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4132,7 +4132,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4144,7 +4144,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4156,7 +4156,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4168,7 +4168,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4200,7 +4200,7 @@ namespace OX.Strongbind.Tests
 				MdiClient bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -4212,7 +4212,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -4224,7 +4224,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4236,7 +4236,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -4248,7 +4248,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4260,7 +4260,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4272,7 +4272,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4284,7 +4284,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -4296,7 +4296,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4308,7 +4308,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4340,7 +4340,7 @@ namespace OX.Strongbind.Tests
 				MenuStrip bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -4352,7 +4352,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -4364,7 +4364,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4376,7 +4376,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -4388,7 +4388,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4400,7 +4400,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4412,7 +4412,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4424,7 +4424,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -4436,7 +4436,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4448,7 +4448,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4480,7 +4480,7 @@ namespace OX.Strongbind.Tests
 				MonthCalendar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeMaxSelectionCount = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxSelectionCount);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxSelectionCount);
 
 				Assert.AreEqual(dataBindingsBeforeMaxSelectionCount + 1, control.DataBindings.Count);
 				
@@ -4492,7 +4492,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeScrollChange = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ScrollChange);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ScrollChange);
 
 				Assert.AreEqual(dataBindingsBeforeScrollChange + 1, control.DataBindings.Count);
 				
@@ -4504,7 +4504,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -4516,7 +4516,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -4528,7 +4528,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -4540,7 +4540,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4552,7 +4552,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4564,7 +4564,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4576,7 +4576,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4588,7 +4588,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4620,7 +4620,7 @@ namespace OX.Strongbind.Tests
 				NumericUpDown bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeDecimalPlaces = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.DecimalPlaces);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.DecimalPlaces);
 
 				Assert.AreEqual(dataBindingsBeforeDecimalPlaces + 1, control.DataBindings.Count);
 				
@@ -4632,7 +4632,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeIncrement = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.DecimalValue).To(bindableTarget.Increment);
+				scope.Bind(bindableSource.DecimalValue).To(bindableTarget.Increment);
 
 				Assert.AreEqual(dataBindingsBeforeIncrement + 1, control.DataBindings.Count);
 				
@@ -4644,7 +4644,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaximum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.DecimalValue).To(bindableTarget.Maximum);
+				scope.Bind(bindableSource.DecimalValue).To(bindableTarget.Maximum);
 
 				Assert.AreEqual(dataBindingsBeforeMaximum + 1, control.DataBindings.Count);
 				
@@ -4656,7 +4656,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinimum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.DecimalValue).To(bindableTarget.Minimum);
+				scope.Bind(bindableSource.DecimalValue).To(bindableTarget.Minimum);
 
 				Assert.AreEqual(dataBindingsBeforeMinimum + 1, control.DataBindings.Count);
 				
@@ -4668,7 +4668,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValue = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.DecimalValue).To(bindableTarget.Value);
+				scope.Bind(bindableSource.DecimalValue).To(bindableTarget.Value);
 
 				Assert.AreEqual(dataBindingsBeforeValue + 1, control.DataBindings.Count);
 				
@@ -4680,7 +4680,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -4692,7 +4692,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -4704,7 +4704,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4716,7 +4716,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4728,7 +4728,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4740,7 +4740,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4752,7 +4752,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4764,7 +4764,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4796,7 +4796,7 @@ namespace OX.Strongbind.Tests
 				PictureBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageLocation = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageLocation);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageLocation);
 
 				Assert.AreEqual(dataBindingsBeforeImageLocation + 1, control.DataBindings.Count);
 				
@@ -4808,7 +4808,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -4820,7 +4820,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -4832,7 +4832,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -4844,7 +4844,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -4856,7 +4856,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -4868,7 +4868,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -4880,7 +4880,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -4892,7 +4892,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -4904,7 +4904,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -4916,7 +4916,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -4948,7 +4948,7 @@ namespace OX.Strongbind.Tests
 				ProgressBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeMarqueeAnimationSpeed = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MarqueeAnimationSpeed);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MarqueeAnimationSpeed);
 
 				Assert.AreEqual(dataBindingsBeforeMarqueeAnimationSpeed + 1, control.DataBindings.Count);
 				
@@ -4960,7 +4960,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaximum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
 
 				Assert.AreEqual(dataBindingsBeforeMaximum + 1, control.DataBindings.Count);
 				
@@ -4972,7 +4972,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinimum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
 
 				Assert.AreEqual(dataBindingsBeforeMinimum + 1, control.DataBindings.Count);
 				
@@ -4984,7 +4984,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeStep = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Step);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Step);
 
 				Assert.AreEqual(dataBindingsBeforeStep + 1, control.DataBindings.Count);
 				
@@ -4996,7 +4996,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5008,7 +5008,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValue = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Value);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Value);
 
 				Assert.AreEqual(dataBindingsBeforeValue + 1, control.DataBindings.Count);
 				
@@ -5020,7 +5020,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -5032,7 +5032,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -5044,7 +5044,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -5056,7 +5056,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5068,7 +5068,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5080,7 +5080,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5092,7 +5092,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5104,7 +5104,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5116,7 +5116,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -5148,7 +5148,7 @@ namespace OX.Strongbind.Tests
 				PropertyGrid bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5160,7 +5160,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -5172,7 +5172,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -5184,7 +5184,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -5196,7 +5196,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5208,7 +5208,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5220,7 +5220,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5232,7 +5232,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5244,7 +5244,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5256,7 +5256,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -5288,7 +5288,7 @@ namespace OX.Strongbind.Tests
 				RadioButton bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -5300,7 +5300,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -5312,7 +5312,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5324,7 +5324,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -5336,7 +5336,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -5348,7 +5348,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -5360,7 +5360,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5372,7 +5372,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5384,7 +5384,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5396,7 +5396,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5408,7 +5408,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5420,7 +5420,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -5452,7 +5452,7 @@ namespace OX.Strongbind.Tests
 				RichTextBox bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeBulletIndent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.BulletIndent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.BulletIndent);
 
 				Assert.AreEqual(dataBindingsBeforeBulletIndent + 1, control.DataBindings.Count);
 				
@@ -5464,7 +5464,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaxLength = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MaxLength);
 
 				Assert.AreEqual(dataBindingsBeforeMaxLength + 1, control.DataBindings.Count);
 				
@@ -5476,7 +5476,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRightMargin = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.RightMargin);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.RightMargin);
 
 				Assert.AreEqual(dataBindingsBeforeRightMargin + 1, control.DataBindings.Count);
 				
@@ -5488,7 +5488,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionCharOffset = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionCharOffset);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionCharOffset);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionCharOffset + 1, control.DataBindings.Count);
 				
@@ -5500,7 +5500,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionHangingIndent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionHangingIndent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionHangingIndent);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionHangingIndent + 1, control.DataBindings.Count);
 				
@@ -5512,7 +5512,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionIndent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionIndent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionIndent);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionIndent + 1, control.DataBindings.Count);
 				
@@ -5524,7 +5524,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSelectionRightIndent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SelectionRightIndent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SelectionRightIndent);
 
 				Assert.AreEqual(dataBindingsBeforeSelectionRightIndent + 1, control.DataBindings.Count);
 				
@@ -5536,7 +5536,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5548,7 +5548,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeZoomFactor = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.FloatValue).To(bindableTarget.ZoomFactor);
+				scope.Bind(bindableSource.FloatValue).To(bindableTarget.ZoomFactor);
 
 				Assert.AreEqual(dataBindingsBeforeZoomFactor + 1, control.DataBindings.Count);
 				
@@ -5560,7 +5560,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5572,7 +5572,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5584,7 +5584,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5596,7 +5596,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5608,7 +5608,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5620,7 +5620,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -5652,7 +5652,7 @@ namespace OX.Strongbind.Tests
 				SplitContainer bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforePanel1MinSize = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Panel1MinSize);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Panel1MinSize);
 
 				Assert.AreEqual(dataBindingsBeforePanel1MinSize + 1, control.DataBindings.Count);
 				
@@ -5664,7 +5664,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforePanel2MinSize = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Panel2MinSize);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Panel2MinSize);
 
 				Assert.AreEqual(dataBindingsBeforePanel2MinSize + 1, control.DataBindings.Count);
 				
@@ -5676,7 +5676,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSplitterDistance = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SplitterDistance);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SplitterDistance);
 
 				Assert.AreEqual(dataBindingsBeforeSplitterDistance + 1, control.DataBindings.Count);
 				
@@ -5688,7 +5688,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSplitterIncrement = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SplitterIncrement);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SplitterIncrement);
 
 				Assert.AreEqual(dataBindingsBeforeSplitterIncrement + 1, control.DataBindings.Count);
 				
@@ -5700,7 +5700,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSplitterWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SplitterWidth);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SplitterWidth);
 
 				Assert.AreEqual(dataBindingsBeforeSplitterWidth + 1, control.DataBindings.Count);
 				
@@ -5712,7 +5712,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5724,7 +5724,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -5736,7 +5736,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -5748,7 +5748,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -5760,7 +5760,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5772,7 +5772,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5784,7 +5784,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5796,7 +5796,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5808,7 +5808,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5840,7 +5840,7 @@ namespace OX.Strongbind.Tests
 				Splitter bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeMinExtra = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MinExtra);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MinExtra);
 
 				Assert.AreEqual(dataBindingsBeforeMinExtra + 1, control.DataBindings.Count);
 				
@@ -5852,7 +5852,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinSize = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.MinSize);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.MinSize);
 
 				Assert.AreEqual(dataBindingsBeforeMinSize + 1, control.DataBindings.Count);
 				
@@ -5864,7 +5864,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -5876,7 +5876,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -5888,7 +5888,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -5900,7 +5900,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -5912,7 +5912,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -5924,7 +5924,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -5936,7 +5936,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -5948,7 +5948,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -5960,7 +5960,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -5972,7 +5972,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6004,7 +6004,7 @@ namespace OX.Strongbind.Tests
 				StatusBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6016,7 +6016,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6028,7 +6028,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6040,7 +6040,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6052,7 +6052,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6064,7 +6064,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6076,7 +6076,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6088,7 +6088,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6100,7 +6100,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6112,7 +6112,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6144,7 +6144,7 @@ namespace OX.Strongbind.Tests
 				StatusStrip bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6156,7 +6156,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6168,7 +6168,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6180,7 +6180,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6192,7 +6192,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6204,7 +6204,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6216,7 +6216,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6228,7 +6228,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6240,7 +6240,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6252,7 +6252,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6284,7 +6284,7 @@ namespace OX.Strongbind.Tests
 				TabControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6296,7 +6296,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6308,7 +6308,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6320,7 +6320,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6332,7 +6332,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6344,7 +6344,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6356,7 +6356,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6368,7 +6368,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6380,7 +6380,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6392,7 +6392,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6424,7 +6424,7 @@ namespace OX.Strongbind.Tests
 				TableLayoutPanel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeColumnCount = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ColumnCount);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ColumnCount);
 
 				Assert.AreEqual(dataBindingsBeforeColumnCount + 1, control.DataBindings.Count);
 				
@@ -6436,7 +6436,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRowCount = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.RowCount);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.RowCount);
 
 				Assert.AreEqual(dataBindingsBeforeRowCount + 1, control.DataBindings.Count);
 				
@@ -6448,7 +6448,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6460,7 +6460,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6472,7 +6472,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6484,7 +6484,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6496,7 +6496,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6508,7 +6508,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6520,7 +6520,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6532,7 +6532,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6544,7 +6544,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6556,7 +6556,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6588,7 +6588,7 @@ namespace OX.Strongbind.Tests
 				TabPage bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ImageIndex);
 
 				Assert.AreEqual(dataBindingsBeforeImageIndex + 1, control.DataBindings.Count);
 				
@@ -6600,7 +6600,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -6612,7 +6612,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6624,7 +6624,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6636,7 +6636,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeToolTipText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ToolTipText);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ToolTipText);
 
 				Assert.AreEqual(dataBindingsBeforeToolTipText + 1, control.DataBindings.Count);
 				
@@ -6648,7 +6648,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6660,7 +6660,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6672,7 +6672,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6684,7 +6684,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6696,7 +6696,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6708,7 +6708,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6720,7 +6720,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6732,7 +6732,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6764,7 +6764,7 @@ namespace OX.Strongbind.Tests
 				ToolBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6776,7 +6776,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6788,7 +6788,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6800,7 +6800,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6812,7 +6812,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6824,7 +6824,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6836,7 +6836,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6848,7 +6848,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -6860,7 +6860,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -6892,7 +6892,7 @@ namespace OX.Strongbind.Tests
 				ToolStripContainer bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -6904,7 +6904,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -6916,7 +6916,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -6928,7 +6928,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -6940,7 +6940,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -6952,7 +6952,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -6964,7 +6964,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -6976,7 +6976,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -6988,7 +6988,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7000,7 +7000,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7032,7 +7032,7 @@ namespace OX.Strongbind.Tests
 				ToolStripContentPanel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7044,7 +7044,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7056,7 +7056,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7068,7 +7068,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7080,7 +7080,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7092,7 +7092,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7104,7 +7104,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -7116,7 +7116,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7128,7 +7128,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7140,7 +7140,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7172,7 +7172,7 @@ namespace OX.Strongbind.Tests
 				ToolStripPanel bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7184,7 +7184,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7196,7 +7196,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7208,7 +7208,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7220,7 +7220,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7232,7 +7232,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -7244,7 +7244,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7256,7 +7256,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7268,7 +7268,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7280,7 +7280,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7312,7 +7312,7 @@ namespace OX.Strongbind.Tests
 				TrackBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeLargeChange = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
 
 				Assert.AreEqual(dataBindingsBeforeLargeChange + 1, control.DataBindings.Count);
 				
@@ -7324,7 +7324,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaximum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
 
 				Assert.AreEqual(dataBindingsBeforeMaximum + 1, control.DataBindings.Count);
 				
@@ -7336,7 +7336,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinimum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
 
 				Assert.AreEqual(dataBindingsBeforeMinimum + 1, control.DataBindings.Count);
 				
@@ -7348,7 +7348,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeSmallChange = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.SmallChange);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.SmallChange);
 
 				Assert.AreEqual(dataBindingsBeforeSmallChange + 1, control.DataBindings.Count);
 				
@@ -7360,7 +7360,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7372,7 +7372,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTickFrequency = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TickFrequency);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TickFrequency);
 
 				Assert.AreEqual(dataBindingsBeforeTickFrequency + 1, control.DataBindings.Count);
 				
@@ -7384,7 +7384,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValue = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Value);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Value);
 
 				Assert.AreEqual(dataBindingsBeforeValue + 1, control.DataBindings.Count);
 				
@@ -7396,7 +7396,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7408,7 +7408,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7420,7 +7420,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7432,7 +7432,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7444,7 +7444,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7456,7 +7456,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7468,7 +7468,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7480,7 +7480,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7512,7 +7512,7 @@ namespace OX.Strongbind.Tests
 				TreeView bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeImageKey = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
+				scope.Bind(bindableSource.Name).To(bindableTarget.ImageKey);
 
 				Assert.AreEqual(dataBindingsBeforeImageKey + 1, control.DataBindings.Count);
 				
@@ -7524,7 +7524,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeIndent = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Indent);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Indent);
 
 				Assert.AreEqual(dataBindingsBeforeIndent + 1, control.DataBindings.Count);
 				
@@ -7536,7 +7536,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeItemHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.ItemHeight);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.ItemHeight);
 
 				Assert.AreEqual(dataBindingsBeforeItemHeight + 1, control.DataBindings.Count);
 				
@@ -7548,7 +7548,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforePathSeparator = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.PathSeparator);
+				scope.Bind(bindableSource.Name).To(bindableTarget.PathSeparator);
 
 				Assert.AreEqual(dataBindingsBeforePathSeparator + 1, control.DataBindings.Count);
 				
@@ -7560,7 +7560,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7572,7 +7572,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7584,7 +7584,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7596,7 +7596,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7608,7 +7608,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -7620,7 +7620,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7632,7 +7632,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7644,7 +7644,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7656,7 +7656,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7668,7 +7668,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7700,7 +7700,7 @@ namespace OX.Strongbind.Tests
 				UserControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7712,7 +7712,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7724,7 +7724,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7736,7 +7736,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7748,7 +7748,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -7760,7 +7760,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7772,7 +7772,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7784,7 +7784,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7796,7 +7796,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7808,7 +7808,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -7840,7 +7840,7 @@ namespace OX.Strongbind.Tests
 				VScrollBar bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeLargeChange = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.LargeChange);
 
 				Assert.AreEqual(dataBindingsBeforeLargeChange + 1, control.DataBindings.Count);
 				
@@ -7852,7 +7852,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMaximum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Maximum);
 
 				Assert.AreEqual(dataBindingsBeforeMaximum + 1, control.DataBindings.Count);
 				
@@ -7864,7 +7864,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeMinimum = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Minimum);
 
 				Assert.AreEqual(dataBindingsBeforeMinimum + 1, control.DataBindings.Count);
 				
@@ -7876,7 +7876,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -7888,7 +7888,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeValue = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Value);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Value);
 
 				Assert.AreEqual(dataBindingsBeforeValue + 1, control.DataBindings.Count);
 				
@@ -7900,7 +7900,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -7912,7 +7912,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -7924,7 +7924,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -7936,7 +7936,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -7948,7 +7948,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -7960,7 +7960,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -7972,7 +7972,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -7984,7 +7984,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -7996,7 +7996,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				
@@ -8028,7 +8028,7 @@ namespace OX.Strongbind.Tests
 				PrintPreviewControl bindableTarget = scope.CreateTarget(control);
 				int dataBindingsBeforeColumns = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Columns);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Columns);
 
 				Assert.AreEqual(dataBindingsBeforeColumns + 1, control.DataBindings.Count);
 				
@@ -8040,7 +8040,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeRows = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Rows);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Rows);
 
 				Assert.AreEqual(dataBindingsBeforeRows + 1, control.DataBindings.Count);
 				
@@ -8052,7 +8052,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeText = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
 				Assert.AreEqual(dataBindingsBeforeText + 1, control.DataBindings.Count);
 				
@@ -8064,7 +8064,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeStartPage = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.StartPage);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.StartPage);
 
 				Assert.AreEqual(dataBindingsBeforeStartPage + 1, control.DataBindings.Count);
 				
@@ -8076,7 +8076,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeZoom = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.DoubleValue).To(bindableTarget.Zoom);
+				scope.Bind(bindableSource.DoubleValue).To(bindableTarget.Zoom);
 
 				Assert.AreEqual(dataBindingsBeforeZoom + 1, control.DataBindings.Count);
 				
@@ -8088,7 +8088,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDefaultActionDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDefaultActionDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDefaultActionDescription + 1, control.DataBindings.Count);
 				
@@ -8100,7 +8100,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleDescription = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleDescription);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleDescription + 1, control.DataBindings.Count);
 				
@@ -8112,7 +8112,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeAccessibleName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
+				scope.Bind(bindableSource.Name).To(bindableTarget.AccessibleName);
 
 				Assert.AreEqual(dataBindingsBeforeAccessibleName + 1, control.DataBindings.Count);
 				
@@ -8124,7 +8124,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeHeight = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Height);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Height);
 
 				Assert.AreEqual(dataBindingsBeforeHeight + 1, control.DataBindings.Count);
 				
@@ -8136,7 +8136,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeLeft = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Left);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Left);
 
 				Assert.AreEqual(dataBindingsBeforeLeft + 1, control.DataBindings.Count);
 				
@@ -8148,7 +8148,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeName = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.Name).To(bindableTarget.Name);
+				scope.Bind(bindableSource.Name).To(bindableTarget.Name);
 
 				Assert.AreEqual(dataBindingsBeforeName + 1, control.DataBindings.Count);
 				
@@ -8160,7 +8160,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTabIndex = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.TabIndex);
 
 				Assert.AreEqual(dataBindingsBeforeTabIndex + 1, control.DataBindings.Count);
 				
@@ -8172,7 +8172,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeTop = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Top);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Top);
 
 				Assert.AreEqual(dataBindingsBeforeTop + 1, control.DataBindings.Count);
 				
@@ -8184,7 +8184,7 @@ namespace OX.Strongbind.Tests
 
 				int dataBindingsBeforeWidth = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.IntValue).To(bindableTarget.Width);
+				scope.Bind(bindableSource.IntValue).To(bindableTarget.Width);
 
 				Assert.AreEqual(dataBindingsBeforeWidth + 1, control.DataBindings.Count);
 				

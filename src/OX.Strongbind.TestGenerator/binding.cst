@@ -1,6 +1,6 @@
 				int dataBindingsBefore%TARGETPROPERTY% = control.DataBindings.Count;
 				
-				Binder.Bind(bindableSource.%SOURCEPROPERTY%).To(bindableTarget.%TARGETPROPERTY%);
+				scope.Bind(bindableSource.%SOURCEPROPERTY%).To(bindableTarget.%TARGETPROPERTY%);
 
 				Assert.AreEqual(dataBindingsBefore%TARGETPROPERTY% + 1, control.DataBindings.Count);
 				

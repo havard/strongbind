@@ -47,6 +47,7 @@
     <Compile Include="BindingScopeTests.cs" />
     <Compile Include="BindingTests.cs" />
     <Compile Include="BusinessObject.cs" />
+    <Compile Include="NavigationPathBindingTests.cs" />
     <Compile Include="GeneratedBindingTests.cs" />
     <Compile Include="IBusinessObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

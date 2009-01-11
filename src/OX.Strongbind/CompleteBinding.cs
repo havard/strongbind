@@ -12,6 +12,8 @@ namespace OX.Strongbind
     /// </summary>
     public class CompleteBinding : AbstractBinding
     {
+        private PartialBinding partialBinding;
+
         /// <summary>
         /// The underlying binding between the source and target.
         /// </summary>
@@ -31,13 +33,24 @@ namespace OX.Strongbind
         /// <summary>
         /// Constructs a new complete binding.
         /// </summary>
-        /// <param name="source">The source for the binding. See <see cref="BindingScope.CreateSource" />.</param>
-        /// <param name="target">The target for the binding. See <see cref="BindingScope.CreateTarget" />.</param>
-        internal CompleteBinding(BindingPair source, BindingPair target)
-            : base()
+        /// <param name="partialBinding">The partial binding to construct a binding from. See <see cref="PartialBinding" /> and <see cref="BindingScope.CreateSource" />.</param>
+        internal CompleteBinding(PartialBinding partialBinding)
+            : base(partialBinding.BindingPairHolder)
         {
-            Source = source;
-            Target = target;
+            this.partialBinding = partialBinding;
+
+            Source = partialBinding.Source;
+            ConsumeTargetAndBind();
+        }
+
+        private void ConsumeTargetAndBind()
+        {
+            Target = BindingPairHolder.ConsumeBindingPair();
+
+            if (Target == null)
+                throw new InvalidOperationException("Target property was not successfully declared. Verify that the target has been created using BindingScope.CreateTarget, and that the target type used during that declaration is either an interface type, a concrete type containing only virtual properties, or a type implementing MarshalByRefObject.");
+
+            BindableTarget.DataBindings.Add(Target.Member, Source.Object, Source.Member);
         }
 
         /// <summary>
@@ -46,16 +59,7 @@ namespace OX.Strongbind
         /// <param name="propertyValue">The target property to bind to.</param>
         public CompleteBinding And(object propertyValue)
         {
-            BindingPair newTarget = BindingPairHolder.ConsumeBindingPair();
-            if (newTarget == null)
-                throw new InvalidOperationException("Target property was not successfully declared. Verify that the target property is virtual.");
-
-            CompleteBinding newBinding = new CompleteBinding(Source, newTarget);
-            if (newTarget.Object == Target.Object)
-                BindableTarget.DataBindings.Add(newTarget.Member, Source.Object, Source.Member);
-            else
-                newBinding.BindableTarget.DataBindings.Add(newTarget.Member, Source.Object, Source.Member);
-            return newBinding; 
+            return new CompleteBinding(partialBinding);
         }
 
         /// <summary>

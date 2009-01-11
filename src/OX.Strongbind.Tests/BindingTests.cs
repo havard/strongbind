@@ -38,7 +38,7 @@ namespace OX.Strongbind.Tests
                 IBusinessObject bindableSource = scope.CreateSource(businessObject);
                 CheckBox bindableTarget = scope.CreateTarget(checkbox);
 
-                Binder.Bind(bindableSource.Name).To(bindableTarget.Text);
+                scope.Bind(bindableSource.Name).To(bindableTarget.Text);
 
                 Assert.AreEqual(1, checkbox.DataBindings.Count);
 
@@ -71,7 +71,7 @@ namespace OX.Strongbind.Tests
                 IBusinessObject bindableSource = scope.CreateSource(businessObject);
                 CheckBox bindableTarget = scope.CreateTarget(checkbox);
 
-                Binder.Bind(bindableSource.Name).To(bindableTarget.Text).And(bindableTarget.Tag);
+                scope.Bind(bindableSource.Name).To(bindableTarget.Text).And(bindableTarget.Tag);
 
                 Assert.AreEqual(2, checkbox.DataBindings.Count);
 

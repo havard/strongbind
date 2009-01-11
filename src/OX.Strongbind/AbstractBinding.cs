@@ -9,21 +9,36 @@ namespace OX.Strongbind
     {
         private BindingPair source;
         private BindingPair target;
+        private BindingPairHolder bindingPairHolder;
 
-        public BindingPair Source
+        /// <summary>
+        /// Constructs a new abstract binding.
+        /// </summary>
+        /// <param name="bindingPairHolder">The binding pair holder to use for the binding.</param>
+        protected AbstractBinding(BindingPairHolder bindingPairHolder)
+        {
+            this.bindingPairHolder = bindingPairHolder;
+        }
+
+        internal BindingPairHolder BindingPairHolder
+        {
+            get { return bindingPairHolder; }
+        }
+
+        internal BindingPair Source
         {
             get { return source; }
             set { source = value; }
         }
 
-        public BindingPair Target
+        internal BindingPair Target
         {
             get { return target; }
             set { target = value; }
         }
 
         /// <summary>
-        /// Returns the target of the binding as an <see cref="IBindableComponent" />.
+        /// Returns the target of the binding as an <see cref="System.Windows.Forms.IBindableComponent" />.
         /// Used internally for convenience during binding declaration.
         /// </summary>
         protected System.Windows.Forms.IBindableComponent BindableTarget

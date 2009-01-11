@@ -6,22 +6,30 @@ namespace OX.Strongbind.Dynamic
     internal class DynamicProxy
     {
         private IBindingScope scope;
+        private BindingPairHolder bindingPairHolder;
 
-        public DynamicProxy(IBindingScope scope)
+        public DynamicProxy(IBindingScope scope, BindingPairHolder bindingPairHolder)
         {
             this.scope = scope;
+            this.bindingPairHolder = bindingPairHolder;
         }
 
         public T For<T>(T instance)
         {
+            return (T)For(typeof(T), instance);
+        }
+
+        public object For(Type instanceType, object instance)
+        {
             ThrowIfScopeIsDisposed();
 
-            DynamicProxyInterceptor interceptor = new DynamicProxyInterceptor(scope, instance);
+            DynamicProxyInterceptor interceptor = new DynamicProxyInterceptor(scope, instance, bindingPairHolder);
             ProxyGenerator generator = new ProxyGenerator();
-            if (typeof(T).IsInterface)
-                return generator.CreateInterfaceProxyWithTarget<T>(instance, interceptor);
+
+            if(instanceType.IsInterface)
+                return generator.CreateInterfaceProxyWithTarget(instanceType, instance, interceptor);
             else
-                return generator.CreateClassProxy<T>(interceptor);
+                return generator.CreateClassProxy(instanceType, interceptor);
         }
 
         private void ThrowIfScopeIsDisposed()

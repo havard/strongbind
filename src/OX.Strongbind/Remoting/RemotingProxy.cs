@@ -17,7 +17,7 @@ namespace OX.Strongbind.Remoting
         private readonly IpcServerChannel serverChannel;
         private readonly IBindingScope scope;
 
-        public RemotingProxy(IBindingScope scope)
+        public RemotingProxy(IBindingScope scope, BindingPairHolder bindingPairHolder)
         {
             this.scope = scope;
 
@@ -25,7 +25,7 @@ namespace OX.Strongbind.Remoting
 
             channelName = Guid.NewGuid().ToString();
 
-            IServerChannelSinkProvider provider = new InterceptingServerChannelSinkProvider(this);
+            IServerChannelSinkProvider provider = new InterceptingServerChannelSinkProvider(this, bindingPairHolder);
             serverChannel = new IpcServerChannel(channelName, channelName, provider);
 
             //IServerChannelSink sink = ChannelServices.CreateServerChannelSinkChain(provider, serverChannel);

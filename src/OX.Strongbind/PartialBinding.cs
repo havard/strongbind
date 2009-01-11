@@ -10,10 +10,21 @@ namespace OX.Strongbind
     /// </summary>
     public class PartialBinding : AbstractBinding
     {
-        internal PartialBinding(BindingPair source)
-            : base()
+        /// <summary>
+        /// Constructs a new partial binding.
+        /// </summary>
+        /// <param name="bindingPairHolder">The binding pair holder to consume from.</param>
+        internal PartialBinding(BindingPairHolder bindingPairHolder)
+            : base(bindingPairHolder)
         {
-            Source = source;
+            ConsumeSource();
+        }
+
+        private void ConsumeSource()
+        {
+            Source = BindingPairHolder.ConsumeBindingPair();
+            if (Source == null)
+                throw new ArgumentException("Source property was not successfully declared. Verify that the target has been created using BindingScope.CreateTarget, and that the target type used during that declaration is either an interface type, a concrete type containing only virtual properties, or a type implementing MarshalByRefObject.");
         }
 
         /// <summary>
@@ -22,13 +33,7 @@ namespace OX.Strongbind
         /// <param name="propertyValue">The target property to bind to.</param>
         public CompleteBinding To(object propertyValue)
         {
-            Target = BindingPairHolder.ConsumeBindingPair();
-
-            if(Target == null)
-                throw new InvalidOperationException("Target property was not successfully declared. Verify that the target has been created using BindingScope.CreateTarget, and that the target type used during that declaration is either an interface type, a concrete type containing only virtual properties, or a type implementing MarshalByRefObject.");
-            BindableTarget.DataBindings.Add(Target.Member, Source.Object, Source.Member);
-
-            return new CompleteBinding(Source, Target);
+            return new CompleteBinding(this);
         }
     }
 
